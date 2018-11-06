@@ -14,6 +14,8 @@ class Scraper
       student_hash={name:name,location:location,profile_url:profile_url}
       students_hashes.push(student_hash)
     end
+
+    students_hashes
   end
 
 
