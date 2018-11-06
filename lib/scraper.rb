@@ -9,8 +9,6 @@ class Scraper
     docs = Nokogiri::HTML(open(index_url))
 
     students_infos = docs.css('.student-card')
-
-
     students_infos.each do |student|
       name=student.css('h4').text
       location=student.css('p').text
@@ -21,8 +19,7 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
-    
+
   end
 
 end
-
